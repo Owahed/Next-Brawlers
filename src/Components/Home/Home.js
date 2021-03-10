@@ -4,9 +4,6 @@ import './Home.css'
 
 const Home = () => {
     const [teams, setTeams] = useState([]);
-    
-    
-        // const allTeams = teams.teams;
         
 
     useEffect(() => {
@@ -17,13 +14,13 @@ const Home = () => {
     }, []);
 
    
-    console.log(teams);
+    console.log(teams.idTeam);
     return (
         <div className="home-component">
             
 
             {
-              teams && teams.map(team => <Team team={team}></Team>)
+              teams && teams.map(team => <Team team={team.idTeam} team={team}></Team>)
             }
         </div>
     );

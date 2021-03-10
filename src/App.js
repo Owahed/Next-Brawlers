@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import NoMatch from './Components/NoMatch/NoMatch';
 import TeamDetail from './Components/TeamDetail/TeamDetail';
-import SocialFollow from './Components/SocialFollow/SocialFollow';
+
 
 function App() {
   return (

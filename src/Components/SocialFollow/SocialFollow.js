@@ -9,13 +9,13 @@ import YouTube from '../../Icon/YouTube.png'
 
 
 const SocialFollow = (props) => {
-    const {strFacebook,strTwitter,strYoutube}=(props.teamDetail)
+    const {strFacebook,strTwitter,strYoutube}=(props.teamDetail);
+    // console.log(props.teamDetail);
     return (
         <div className="social-icon">
-           
-            <Link to={strFacebook}>
+            <a href={strFacebook}>
             <img src={Facebook} alt=""/>
-            </Link>
+            </a>          
             <Link to={strTwitter}>
             <img src={Twitter} alt=""/>
             </Link>

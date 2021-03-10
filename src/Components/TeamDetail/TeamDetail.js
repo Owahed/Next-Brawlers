@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faYoutube,faFacebook,faTwitter,faInstagram ,faMars,faFutbol,faFlag,faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
+import { faMars,faFutbol,faFlag,faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 import './TeamDetail.css';
 import teamImgMale from '../../Photo/male.png'
 import teamImgFemale from '../../Photo/female.png'
@@ -15,13 +15,14 @@ const TeamDetail = () => {
 
 
     useEffect(() => {
+
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${teamId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setTeamDetail(data.teams[0]))
     }, []);
     const gender =teamDetail.strGender;
-    console.log(gender);
+    // console.log(gender);
 
     let teamImage= (gender=="Male") ?<img src={teamImgMale} alt=""/> : <img src={teamImgFemale} alt=""/>
     
