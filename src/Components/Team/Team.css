@@ -1,0 +1,16 @@
+img{
+    width: 100px;
+}
+.team-component{
+    background-color: aqua;
+    margin: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.team-component button{
+    padding: 10px 22px;
+    background-color: #f06a73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
